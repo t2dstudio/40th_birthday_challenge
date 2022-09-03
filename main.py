@@ -38,8 +38,8 @@ class CreatePostForm(FlaskForm):
     title = StringField("What Kind of Blessing", validators=[DataRequired()])
     subtitle = StringField("Location", validators=[DataRequired()])
     author = StringField("Your Name", validators=[DataRequired()])
-    img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
-    img_url = StringField("Blog Image URL")
+    # img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
+    # img_url = StringField("Blog Image URL")
     # Notice body's StringField changed to CKEditorField
     body = CKEditorField("Testimony", validators=[DataRequired()])
     submit = SubmitField("Submit Post")
