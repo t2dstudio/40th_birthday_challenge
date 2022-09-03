@@ -55,7 +55,7 @@ class BlogPost(db.Model):
     img_url = db.Column(db.String(250), nullable=True)
 
 
-#db.create_all()
+db.create_all()
 
 # new_post = BlogPost(title="Hurray", subtitle="Hello",date=datetime.now(),
 #                     body="Congratulation", author="Kehinde", img_url="")
