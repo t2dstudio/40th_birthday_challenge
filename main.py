@@ -35,7 +35,7 @@ db = SQLAlchemy(app)
 
 ##WTForm
 class CreatePostForm(FlaskForm):
-    title = StringField("What Kind of Blessing", validators=[DataRequired()])
+    title = StringField("Subject (Example: Cash Gift, Helped the needy,etc", validators=[DataRequired()])
     subtitle = StringField("Location", validators=[DataRequired()])
     author = StringField("Your Name", validators=[DataRequired()])
     # img_url = StringField("Blog Image URL", validators=[DataRequired(), URL()])
